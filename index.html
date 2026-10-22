@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cyber Security Professional Portfolio</title>
+    <meta name="description" content="Portfolio of a Cybersecurity Professional showcasing skills, projects, and experience.">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@300;400;500;700&family=Inter:wght@300;400;600;800&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Welcome / Loader Screen -->
+    <div id="loader-wrapper">
+        <div class="loader-content">
+            <div class="decrypt-text" data-name="Chanupa Niduwara">Chanupa Niduwara</div>
+            <div class="loading-bar">
+                <div class="loading-progress"></div>
+            </div>
+            <div class="system-status">System Initializing...</div>
+        </div>
+    </div>
+
+    <div id="matrix-canvas-container">
+        <canvas id="matrix-canvas"></canvas>
+    </div>
+
+    <header class="navbar">
+        <a href="#home" class="logo" style="text-decoration: none; cursor: pointer;">&lt;chanupaniduwara/&gt;<span class="blink">_</span></a>
+        <div class="nav-right">
+            <nav>
+                <ul class="nav-links" id="nav-links">
+                    <div class="nav-pill"></div>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#skills">Skills</a></li>
+                    <li><a href="#projects">Projects</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <li><a href="gig.html" target="_blank" rel="noopener noreferrer">Gig <span style="font-size:0.7em; margin-left:3px">↗</span></a></li>
+                </ul>
+            </nav>
+            <button id="theme-toggle" class="theme-toggle" aria-label="Toggle Theme">
+                <span id="theme-icon">☀</span>
+            </button>
+            <div class="hamburger" id="hamburger">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <section id="home" class="hero">
+            <div class="hero-content">
+                <h1 class="glitch" data-text="HELLO, I'M A CYBERSECURITY ANALYST">HELLO, I'M A CYBERSECURITY ANALYST</h1>
+                <p class="subtitle">Defending digital frontiers. Securing the future.</p>
+                <div class="cta-buttons">
+                    <a href="#projects" class="btn primary-btn">View My Work</a>
+                    <a href="#contact" class="btn secondary-btn">Contact Me</a>
+                </div>
+            </div>
+        </section>
+
+        <section id="about" class="about-section">
+            <h2 class="section-title">About Me</h2>
+            <div class="about-content">
+                <div class="profile-frame">
+                    <img src="ASSETS/profilepic.jpg" alt="Chanupa Niduwara Profile" class="profile-pic">
+                    <div class="scanner-line"></div>
+                </div>
+                <div class="terminal-window">
+                    <div class="terminal-header">
+                        <span class="dot red"></span>
+                        <span class="dot yellow"></span>
+                        <span class="dot green"></span>
+                        <span class="title">user@kali: ~</span>
+                    </div>
+                    <div class="terminal-body">
+                        <p><span class="prompt">$</span> whoami</p>
+                        <p>I am a passionate cybersecurity enthusiast specializing in penetration testing, threat intelligence, and network security.</p>
+                        <p><span class="prompt">$</span> cat mission.txt</p>
+                        <p>My mission is to identify vulnerabilities before they are exploited and to build robust systems that withstand sophisticated cyber attacks.</p>
+                        <p><span class="prompt">$</span> <span class="blink">_</span></p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="skills" class="skills-section">
+            <h2 class="section-title">Tools & Skills</h2>
+            <div class="skills-grid">
+                <div class="skill-card">
+                    <h3>Penetration Testing</h3>
+                    <p>Kali Linux, Metasploit, Burp Suite, Nmap</p>
+                </div>
+                <div class="skill-card">
+                    <h3>Network Security</h3>
+                    <p>Wireshark, Snort, Firewalls, VPNs</p>
+                </div>
+                <div class="skill-card">
+                    <h3>Scripting</h3>
+                    <p>Python, Bash, PowerShell</p>
+                </div>
+                <div class="skill-card">
+                    <h3>Threat Intelligence</h3>
+                    <p>OSINT, MITRE ATT&amp;CK, Malware Analysis</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="arsenal" class="arsenal-section">
+            <h2 class="section-title">Technical Arsenal</h2>
+            <div class="tech-marquee-wrapper">
+                <div class="tech-marquee">
+                    <!-- Set 1 -->
+                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg" alt="Python" title="Python">
+                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" alt="JavaScript" title="JavaScript">
+                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg" alt="HTML5" title="HTML5">
+                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg" alt="CSS3" title="CSS3">
+                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg" alt="React" title="React">
+                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-original.svg" alt="Node.js" title="Node.js">
+                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-original.svg" alt="Git" title="Git">
+                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/docker/docker-original.svg" alt="Docker" title="Docker">
+                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/bash/bash-original.svg" alt="Bash" title="Bash">
+                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/linux/linux-original.svg" alt="Linux" title="Linux">
+                    
+                    <!-- Set 2 (Duplicated exactly for seamless CSS infinite scrolling) -->
+                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg" alt="Python" title="Python">
+                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" alt="JavaScript" title="JavaScript">
+                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg" alt="HTML5" title="HTML5">
+                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg" alt="CSS3" title="CSS3">
+                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg" alt="React" title="React">
+                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-original.svg" alt="Node.js" title="Node.js">
+                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-original.svg" alt="Git" title="Git">
+                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/docker/docker-original.svg" alt="Docker" title="Docker">
+                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/bash/bash-original.svg" alt="Bash" title="Bash">
+                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/linux/linux-original.svg" alt="Linux" title="Linux">
+                </div>
+            </div>
+        </section>
+
+        <section id="projects" class="projects-section">
+            <h2 class="section-title">Latest Operations</h2>
+            <div class="projects-grid">
+                <div class="project-card">
+                    <div class="project-header">Operation: Red Team</div>
+                    <div class="project-body">
+                        <h3>Corporate Network Assessment</h3>
+                        <p>Conducted a full-scale physical and logical penetration test for a financial institution, discovering 3 critical CVE vulnerabilities.</p>
+                        <a href="#" class="read-more">Read Report ></a>
+                    </div>
+                </div>
+                <div class="project-card">
+                    <div class="project-header">Operation: Blue Team</div>
+                    <div class="project-body">
+                        <h3>SIEM Implementation</h3>
+                        <p>Deployed and configured Splunk for real-time log analysis and intrusion detection, reducing incident response time by 40%.</p>
+                        <a href="#" class="read-more">Read Report ></a>
+                    </div>
+                </div>
+                <div class="project-card">
+                    <div class="project-header">Malware Lab</div>
+                    <div class="project-body">
+                        <h3>Ransomware Reverse Engineering</h3>
+                        <p>Analyzed obfuscated malware samples to extract C2 infrastructure IPs and developed a custom decryption tool.</p>
+                        <a href="#" class="read-more">Read Report ></a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="contact" class="contact-section">
+            <h2 class="section-title">Establish Secure Connection</h2>
+            <form class="contact-form">
+                <div class="input-group">
+                    <label for="name">Your Name</label>
+                    <input type="text" id="name" placeholder="Chanupa" required>
+                </div>
+                <div class="input-group">
+                    <label for="email">Secure Email</label>
+                    <input type="email" id="email" required>
+                </div>
+                <div class="input-group">
+                    <label for="message">Encrypted Payload (Message)</label>
+                    <textarea id="message" rows="5" required></textarea>
+                </div>
+                <button type="submit" class="btn primary-btn submit-btn">Transmit Data</button>
+            </form>
+        </section>
+    </main>
+
+    <footer class="site-footer">
+        <div class="footer-content">
+            <div class="footer-map" style="position: relative;">
+                <a href="https://maps.google.com/maps?q=Nittambuwa,%20Sri%20Lanka" target="_blank" rel="noopener noreferrer" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; z-index: 10;"></a>
+                <iframe src="https://maps.google.com/maps?q=Nittambuwa,%20Sri%20Lanka&t=&z=12&ie=UTF8&iwloc=&output=embed" width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+            </div>
+            <div class="footer-text">
+                <p>&lt;chanupaniduwara/&gt;<span class="blink">_</span> Profile.</p>
+                <p>&copy; 2026 Nittambuwa Base. All rights defended.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

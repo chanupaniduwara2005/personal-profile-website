@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chanupa Niduwara | Visuals</title>
+    <link rel="stylesheet" href="gig-style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,600;1,400&family=Special+Elite&display=swap" rel="stylesheet">
+</head>
+<body>
+    
+    <div class="gig-cultural-bg"></div>
+    
+    <nav class="gig-nav">
+        <div class="brand">lensora EVENT</div>
+        <div class="nav-links">
+            <a href="#photography">Photography</a>
+            <a href="#videography">Videography</a>
+            <a href="#booking">Bookings</a>
+        </div>
+    </nav>
+
+    <header class="hero">
+        <div class="hero-content">
+            <p class="subtitle">Capturing Moment & Motion</p>
+            <h1 class="title">Visual Storytelling <br> Redefined.</h1>
+        </div>
+        <div class="scroll-indicator">
+            <span>Discover</span>
+            <div class="line"></div>
+        </div>
+    </header>
+
+    <section id="photography" class="portfolio-section">
+        <h2 class="section-title">Photography</h2>
+        <div class="gallery-grid">
+            <div class="gallery-item large">
+                <div class="image-placeholder">Cinematic Portrait</div>
+            </div>
+            <div class="gallery-item">
+                <div class="image-placeholder">Street Photography</div>
+            </div>
+            <div class="gallery-item">
+                <div class="image-placeholder">Event Coverage</div>
+            </div>
+            <div class="gallery-item">
+                <div class="image-placeholder">Product Shot</div>
+            </div>
+            <div class="gallery-item wide">
+                <div class="image-placeholder">Landscape / Architecture</div>
+            </div>
+        </div>
+    </section>
+
+    <section id="videography" class="portfolio-section dark-bg">
+        <h2 class="section-title light-text">Videography</h2>
+        <div class="video-grid">
+            <div class="video-card">
+                <div class="video-placeholder">▶ Play Reel</div>
+                <h3>Commercial Promos</h3>
+                <p>High dynamic range promotional content tailored for social media campaigns.</p>
+            </div>
+            <div class="video-card">
+                <div class="video-placeholder">▶ Play Reel</div>
+                <h3>Event Aftermovies</h3>
+                <p>Energy-packed cinematic recaps that preserve the true emotion of your events.</p>
+            </div>
+            <div class="video-card">
+                <div class="video-placeholder">▶ Play Reel</div>
+                <h3>Short Films</h3>
+                <p>Narrative-driven storyboarding capturing deep emotional journeys.</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="booking" class="booking-section">
+        <h2 class="section-title">Let's create together.</h2>
+        <p class="booking-desc">Currently accepting projects for Q4. Book your session today.</p>
+        <a href="mailto:chanupa@example.com" class="booking-btn">Request a Quote</a>
+    </section>
+
+    <footer>
+        <p>&copy; 2026 lensora EVENT.</p>
+    </footer>
+
+    <script>
+        // Simple smooth scroll
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
+        });
+
+        // Detached Navbar Glass Effect on Scroll
+        const navbar = document.querySelector('.gig-nav');
+        window.addEventListener('scroll', () => {
+            if (window.scrollY > 50) {
+                navbar.classList.add('scrolled');
+            } else {
+                navbar.classList.remove('scrolled');
+            }
+        });
+    </script>
+</body>
+</html>
